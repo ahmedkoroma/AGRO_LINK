@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,7 @@
 }
 
 .Img_div img {
-    height: 100px; 
+    height: 120px; 
     width: auto; 
     object-fit: contain;
 }
@@ -75,6 +75,17 @@
     box-sizing: border-box;
 }
 
+.SHOPNOW-btn{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 .hero_text {
     flex: 1;
     max-width: 50%;
@@ -113,6 +124,7 @@
     width: 100%;
     height: auto;
     animation: fadeIn 1.2s ease-in-out;
+    border-radius: 40px;
 }
 
 .heading_1 {
