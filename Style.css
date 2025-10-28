@@ -1,6 +1,7 @@
     * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -10,23 +11,28 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 20px;
+}
+
+.Img div{
+  margin-right: auto;
 }
 
 .Img_div img {
     height: 80px; 
     width: auto; 
     object-fit: contain;
-    padding-left: 50px;
 }
 
-.menu ul {
-    display: flex;
-    align-items: center;
-}
 
 .menu li {
     list-style: none;
+    margin-right: 25px;
+}
+
+.menu li:last-of-type{
+  margin-right: 40px;
 }
 
 .menu li a {
@@ -36,35 +42,61 @@
     font-size: 13px;
     font-style: italic;
     font-weight: 300;
-    transition: color 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
 }
 
 .menu li a:hover {
     color: #2E8B57;
-    text-decoration: underline;
     background-color: #3b7a57;
     border-radius: 8px;
-    padding: 6px 12px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.menu button {
-    background-color: white;
-    color: #2E8B57;
-    padding: 5px 15px;
-    border-radius: 20px;
-    border: 2px solid darkgreen;
-    font-size: 10px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-right: 50px;
-    font-size: 10px;
-  }
+.auth-buttons{
+  display: flex;
+  gap: 15px;
 
-.menu button:hover {
+}
+
+.SIGNUP-btn {
+    background-color: white;
+    color: green;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 10px; 
+    font-weight: bold; 
+    white-space: nowrap; /* Prevent text from wrapping on smaller screens */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SIGNUP-btn:hover {
     background-color: #2E8B57;
     color: white;
+}
+
+.LOGIN-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.LOGIN-btn:hover {
+    background-color: white;
+    color: #28a745; 
 }
 
 .main {
@@ -78,7 +110,6 @@
 }
 
 .SHOPNOW-btn{
-    display: inline-block;
     margin-top: 15px;
     background-color: #2e7d32;
     color: white;
@@ -86,6 +117,14 @@
     border-radius: 25px;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.SHOPNOW-btn li a{
+  list-style: none;
+}
+
+.SHOPNOW-btn:hover{
+  background-color: #43a047;
 }
 
 .hero_text {
@@ -98,6 +137,7 @@
     font-size: 30px;
     margin-bottom: 20px;
     color: darkgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hero_text p {
@@ -105,6 +145,8 @@
     margin-bottom: 20px;
     line-height: 1.4;
     letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .hero_text button {
@@ -114,6 +156,7 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hero_div {
@@ -131,8 +174,8 @@
 
 .heading_1 {
     text-align: center;
-    background-color: lightgreen;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     margin-bottom: 30px;
     padding: 20px;
@@ -141,7 +184,7 @@
 
 .about-section {
     padding: 60px 8%;
-    background-color: #f8fff8;
+    background-color: white;
 }
 
 .row {
@@ -158,6 +201,7 @@
     font-size: 18px;
     line-height: 1.6;
     color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .photo_div {
@@ -170,7 +214,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .learn-btn {
@@ -182,6 +226,7 @@
     border-radius: 25px;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .learn-btn:hover {
@@ -191,7 +236,7 @@
 .heading_2 {
     text-align: center;
     background-color: lightgreen;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     margin-bottom: 30px;
     padding: 20px;
@@ -209,6 +254,14 @@
 .box p{
   font-size: 14px;
   line-height: 1.5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -251,117 +304,30 @@
     font-size: 2rem;
     color: #2e7d32;
     margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* 📱 MOBILE RESPONSIVE FIXES */
-@media (max-width: 768px) {
-
-  /* NAVBAR */
-  .menu {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-
-  .menu li a {
-    font-size: 14px;
-    display: block;
-    padding: 8px 0;
-  }
-
-  .menu button {
-    margin-top: 10px;
-    font-size: 12px;
-  }
-
-  /* HERO SECTION */
-  .main {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .hero_text {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .hero_div {
-    max-width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .hero_div img {
-    width: 90%;
-  }
-
-  /* ABOUT SECTION */
-  .about-section {
-    padding: 40px 5%;
-  }
-
-  .about_text {
-    font-size: 16px;
-    max-width: 100%;
-  }
-
-  .photo_div img {
-    width: 90%;
-  }
-
-  /* SERVICES */
-  .boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box {
-    max-width: 90%;
-  }
-
-  .heading_1,
-  .heading_2 {
-    font-size: 22px;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .boxes {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .box {
-    width: 90%;
-  }
-
-  .heading_2 {
-    font-size: 1.5rem;
-    padding: 15px;
-  }
-}
 
 
 .choose_text{
   margin-bottom: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  padding: 20px 0;
+
 }
 
 .choose_text p{
   display: flex;
   line-height: 2.0;
-  color: lightgreen;
+  color: green;
   font-size: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+
 }
