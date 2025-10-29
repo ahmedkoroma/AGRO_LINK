@@ -40,7 +40,6 @@
     color: white;
     text-transform: capitalize;
     font-size: 13px;
-    font-style: italic;
     font-weight: 300;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -66,7 +65,7 @@
     padding: 15px 20px;
     border-radius: 20px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
     font-size: 10px; 
     font-weight: bold; 
     white-space: nowrap; /* Prevent text from wrapping on smaller screens */
@@ -81,7 +80,7 @@
 .LOGIN-btn {
     background-color: transparent;
     color: white;
-    border: 2px solid white;
+    border: 5px solid white;
     padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
@@ -176,7 +175,6 @@
     text-align: center;
     background-color: green;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
     margin-bottom: 30px;
     padding: 20px;
     font-weight: 600;
@@ -214,7 +212,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .learn-btn {
@@ -237,7 +235,6 @@
     text-align: center;
     background-color: lightgreen;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
     margin-bottom: 30px;
     padding: 20px;
     font-weight: 600;
@@ -310,24 +307,31 @@
 
 
 .choose_text{
-  margin-bottom: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
-  justify-content: center;
-  text-align: center;
-  font-weight: 400;
-  padding: 20px 0;
+margin-bottom: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+justify-content: center;
+text-align: center;
+font-weight: 400;
+padding: 20px 0;
 
 }
 
 .choose_text p{
-  display: flex;
-  line-height: 2.0;
-  color: green;
-  font-size: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  justify-content: center;
+display: flex;
+line-height: 2.0;
+color: green;
+font-size: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 700;
+text-align: center;
+justify-content: center;
+padding: 10px;
+}
 
+.choose_text p2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
 }
