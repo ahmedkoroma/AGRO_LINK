@@ -335,3 +335,41 @@ padding: 10px;
     text-align: center;
     font-weight: 400;
 }
+
+.about{
+     background-color: darkgreen;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 20px;
+}
+
+.about li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.about li:last-of-type{
+  margin-right: 40px;
+}
+
+.about li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+}
+
+.about li a:hover {
+    color: #2E8B57;
+    background-color: #3b7a57;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
