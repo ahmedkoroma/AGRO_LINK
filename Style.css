@@ -524,6 +524,7 @@ footer {
     font-size: 15px;
     line-height: 1.5;
     margin: 5px 0;
+    color: white;
 }
 
 
@@ -578,4 +579,5 @@ footer {
 .bottom-bar p {
     margin: 0;
     font-size: 17px;
+    color: white;
 }
