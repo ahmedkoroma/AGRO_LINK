@@ -465,3 +465,117 @@ padding: 10px;
     font-weight: 800;
 
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-bottom: 18px;
+    font-size: large;
+}
+
+
+.btn-hover {
+    background: #20853c;
+}
+
+/* --- FOOTER STYLES --- */
+
+
+footer {
+    background: darkgreen;
+    padding-top: 50px;
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container {
+    width: 90%; 
+    max-width: 1140px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    padding-bottom: 30px;
+}
+
+
+.footer-content {
+    width: calc(33.333% - 20px); 
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+.footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+.footer-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 5px 0;
+}
+
+.list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.list li a:hover {
+    color: lightgreen; 
+}
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: green; 
+}
+
+
+.bottom-bar {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    background: #1e621e; 
+}
+
+.bottom-bar p {
+    margin: 0;
+    font-size: 17px;
+}
