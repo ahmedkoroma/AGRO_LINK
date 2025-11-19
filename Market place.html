@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-   <nav>
-        <ul class="menu">
+  <nav>
+        <ul class="about">
+            <div class="Img_div">
+                <img src="GG.jpg" alt="">
+            </div>
             <li><a href="index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Browse products.html">BROWSE PRODUCTS</a></li>
@@ -17,6 +20,75 @@
 
         </ul>
     </nav>
-    
+        <!--header section-->
+    <header class="market-header">
+        <h1>Market Place</h1>
+        <p>Discover fresh agricultural products from trusted farmers.</p>
+    </header>
+
+    <!-- Search & Filters -->
+    <section class="filters">
+        <input type="text" placeholder="Search products...">
+        <select>
+            <option>All Categories</option>
+            <option>Fruits</option>
+            <option>Vegetables</option>
+            <option>Grains</option>
+            <option>Oils</option>
+        </select>
+        <select>
+            <option>Price Range</option>
+            <option>Le 1 - Le 10</option>
+            <option>Le 10 - Le 50</option>
+            <option>Le 50+</option>
+        </select>
+        <button>Filter</button>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+
+        <div class="product-card">
+            <img src="tomatoes.jpg" alt="">
+            <h3>Fresh Tomatoes</h3>
+            <p class="price">Le 25 / kg</p>
+            <small>Farmer: Ngobeh</small>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="casava.jpg" alt="">
+            <h3>Cassava Tubers</h3>
+            <p class="price">Le 10 / kg</p>
+            <small>Farmer: Arnold</small>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="rice.jpg" alt="">
+            <h3>Local Rice</h3>
+            <p class="price">Le 30 / cup</p>
+            <small>Farmer: Fatimah</small>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="palm oil.jpg" alt="">
+            <h3>Palm Oil</h3>
+            <p class="price">Le 50 / bottle</p>
+            <small>Farmer: Nema</small>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images.jpg" alt="">
+            <h3>Fresh Eggs</h3>
+            <p class="price">Le 15 / tray</p>
+            <small>Farmer: Mohammed</small>
+            <button>Buy Now</button>
+        </div>
+
+    </section>
+  
 </body>
 </html>
